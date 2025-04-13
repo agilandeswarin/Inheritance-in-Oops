@@ -1,0 +1,46 @@
+It is a type of inheritance where a class is derived from a class which is also derived from another class, forming a chain.
+
+class Hockey
+{
+	void afender() {
+		System.out.println("I am a forward player");
+	}
+}
+
+class Football extends Hockey
+{
+	void defender()
+	{
+		System.out.println("I am a backward player");
+	}
+	
+}
+
+class Handball extends Football
+{
+	void player()
+	{
+		System.out.println("I am a left hand player");
+	}
+}
+
+
+public class SimpleMultilevelInheritance {
+
+	public static void main(String[] args) {
+		Hockey h1=new Hockey();
+		Football f1=new Football();
+		Handball hd1=new Handball();
+		
+		h1.afender();
+		
+		f1.afender();
+		f1.defender();
+		
+		hd1.defender();
+		hd1.player();
+		
+		
+	}
+
+}
