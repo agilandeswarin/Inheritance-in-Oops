@@ -1,0 +1,95 @@
+It is a Simple Hierarchical Inheritance
+
+//Simple HIERARCHICAL INHERITANCE
+class ZOHO
+{
+	void TechnicalSupportEngineer()
+	{
+		System.out.println("This is Agil");
+		System.out.println("Iam Technical Support Enginner in ZOHO");
+		
+	}
+	void DataAnalyst()
+	{
+		System.out.println("This is Abi");
+		System.out.println("Iam Data Analyst in ZOHO");
+		
+	}
+	void Tester()
+	{
+		System.out.println("This is Naveen");
+		System.out.println("Iam Tester in ZOHO");
+		
+	}
+	void PromptEngineer()
+	{
+		System.out.println("This is Surups");
+		System.out.println("Iam the prompt enginner in ZOHO");
+	}
+	
+	void SoftwareDeveloper()
+	{
+		System.out.println("This is Anu ");
+		System.out.println("Iam SoftwareDeveloper in ZOHO");
+		
+	}
+	void FrontEndDeveloper()
+	{
+		System.out.println("This is Sannu");
+		System.out.println("Iam FrontEnd Developer in ZOHO");
+		
+	}
+}
+
+class Developer extends ZOHO
+{
+	
+	void Devops()
+	{
+		System.out.println("Developers in ZOHO");
+	}
+}
+
+class Tester extends ZOHO
+{
+	void beginner()
+	{
+		System.out.println("New Employee beginner in this role");
+	}
+}
+
+class Enginner extends ZOHO
+{
+	void intern()
+	{
+		System.out.println("Six month Intern");
+	}
+}
+
+
+public class SimpleHierarchicalInheritance {
+
+	public static void main(String[] args) {
+		
+		Developer d1=new Developer();
+		Tester t1=new Tester();
+		Enginner e1=new Enginner();
+		
+		d1.Devops();
+		d1.FrontEndDeveloper();
+		d1.SoftwareDeveloper();
+		System.out.println("...............................");
+		
+		t1.beginner();
+		t1.Tester();
+		
+		System.out.println("...............................");
+		
+		e1.intern();
+		e1.PromptEngineer();
+		e1.TechnicalSupportEngineer();
+		System.out.println("...............................");
+		
+	}
+
+}
