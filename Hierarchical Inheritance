@@ -1,3 +1,5 @@
+Hierarchical inheritance in Java occurs when multiple classes inherit from a single parent class.
+This allows all child classes to share common properties and methods defined in the parent class.
 It is a Simple Hierarchical Inheritance
 
 //Simple HIERARCHICAL INHERITANCE
